@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+
+<html>
+    <head> 
+        <title>SISTEMA DE CADASTRO</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />    
+		<meta charset="UTF-8"/>
+     </head>
+<body>
+    <h1> Sistema de Cadastro de Atletas</h1>
+    <br>
+    <form>
+        <div>
+            <label for="codigo">Código atleta:</label>                
+            <input id="idBusca"  type="text" />
+        </div>
+        <div class="button">
+            <button id="btnBusca" class="btn btn-default">Buscar Atleta</button>
+        </div>
+        <div class="button">
+            <button id="btnAdiciona" class="btn btn-default">Adicionar Atleta</button>
+        </div>
+        
+    </form>
+    <form id= "atletaForm">
+            <div>
+                <label for="codigo">Código atleta:</label>                
+                <input id="numeroCodigo" name="nro_codigo" type="text" />
+            </div>
+            <div>
+                <label for="codigo">Status:</label>                
+                <input type="text" id="status" name="status" required>
+            </div>
+                
+            <div class="button">
+                    <button id="btnSave" class="btn btn-success">Update</button>
+            </div>
+            <div class="button">
+                <button id="btnInsert" class="btn btn-primary">Insert</button>
+            </div>
+        
+    </form>
+
+    <div id="contas"><div>
+
+<script src="jquery.min.js"></script>
+<script src="index.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
